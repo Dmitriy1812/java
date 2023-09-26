@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Java</title>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a href="#!" class="header__logo">
+        <img src="./img/logo-txt.svg" alt="Лого">
+      </a>
+      <div class="header__overlay" data-menu-overlay></div>
+      <div class="header__user-menu" data-menu>
+        <a href="#!" class="header__logo header__logo-user-menu">
+          <img src="./img/logo-txt.svg" alt="Лого">
+        </a>
+        <div class="hero__btns header__links">
+          <a href="#!" class="button-border">Об обучении</a>
+          <a href="#!" class="button-border">Преимущества</a>
+          <a href="#!" class="button-border">Отзывы</a>
+          <a href="#!" class="button-border">Ценовая политика</a>
+        </div>
+        <button class="btn-reset button-radius" data-graph-path="first" data-graph-speed="200">Вход</button>
+        <button class="btn-reset button-radius" data-graph-path="second" data-graph-speed="200">Регистрация</button>
+      </div>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+  <div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <!-- контент модального окна -->
+        <form class="modal__container form-1">
+          <a href="#!" class="modal__logo-link">
+            <img src="./img/logo-entry.svg" alt="" class="modal__logo">
+          </a>
+          <div class="modal__title">Вход</div>
+          <div class="modal__input-wrap --email">
+            <input type="email" class="modal__input --email email" placeholder="Ваш email">
+          </div>
+          <div class="modal__input-wrap --password">
+            <input type="password" class="modal__input --password password" placeholder="Пароль">
+          </div>
+          <div class="modal__links-wrap">
+            <a class="modal__link" data-graph-path="third">Забыли пароль?</a>
+            <a class="modal__link --bold" data-graph-path="second">Регистрация</a>
+          </div>
+          <button class="modal__button btn-reset">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <!-- контент модального окна -->
+        <form class="modal__container form-2">
+          <a href="#!" class="modal__logo-link">
+            <img src="./img/logo-entry.svg" alt="" class="modal__logo">
+          </a>
+          <div class="modal__title">Регистрация</div>
+          <div class="modal__input-wrap --email">
+            <input type="email" class="modal__input --email email" placeholder="Ваш email">
+          </div>
+          <div class="modal__input-wrap --name">
+            <input type="text" class="modal__input --name name" placeholder="Ваше имя">
+          </div>
+          <div class="modal__input-wrap --password">
+            <input id="advanced-usage_password" type="password" class="modal__input --password password" placeholder="Пароль">
+          </div>
+          <div class="modal__input-wrap --password-repeat">
+            <input type="password" class="modal__input --password-repeat password-repeat" placeholder="Подтверждение пароля">
+          </div>
+          <div class="modal__links-wrap">
+            <a class="modal__link" data-graph-path="first">Уже есть пароль?</a>
+            <a href="#!" class="modal__link --bold" data-graph-path="first">Войти</a>
+          </div>
+          <button class="modal__button btn-reset">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="third">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <!-- контент модального окна -->
+        <form class="modal__container form-3">
+          <a href="#!" class="modal__logo-link">
+            <img src="./img/logo-entry.svg" alt="" class="modal__logo">
+          </a>
+          <div class="modal__title forgot-password">Забыли пароль?</div>
+          <p class="modal__text">Мы пришлем на почту инструкцию<br>для восстановления пароля</p>
+          <div class="modal__input-wrap --email forgot-password">
+            <input type="email" class="modal__input --email email" placeholder="Ваш email">
+          </div>
+          <button class="modal__button btn-reset">Восстановить пароль</button>
+          <div class="modal__links-wrap forgot-password">
+            <a class="modal__link" data-graph-path="first">Вспомнил пароль</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero__grid">
+        <h1 class="hero__title">
+          <span class="hero__text hero__text--one">Становись</span>
+          <span class="hero__text hero__text-transform"><span class="hero__text-java"><span class="hero__text-brace">{</span>Java<span class="hero__text-brace">}</span></span>-разработчиком</span>
+          <span class="hero__text hero__text--two">вместе с нами</span>
+        </h1>
+          <p class="hero__descr">Получи классную востребованную профессию и зарабатывай дома
+            в удобное время
+          </p>
+          <button class="btn-reset button-rect hero__button-grid">Начать учиться</button>
+      </div>
+      <div class="hero__btns">
+        <a href="#about" class="button-border">Об обучении</a>
+        <a href="#benefits" class="button-border">Преимущества</a>
+        <a href="#reviews" class="button-border">Отзывы</a>
+        <a href="#pricing" class="button-border">Ценовая политика</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about section-offset" id="about" data-scroll>
+  <div class="about__container">
+    <div class="about__grid">
+      <h2 class="about__title">Об обучении</h2>
+      <h3 class="about__subtitle">Перед тобой онлайн платформа посвященная java разработĸе.</h3>
+      <p class="about__text about__text-long"><span>Курс состоит из частей, или по другому <br class="about__text-long-br"> — модулей.</span><br>Каждый модуль состоит из видео-лекций, теста и глобального проекта.</p>
+      <p class="about__text about__text-one"><span class="about__text--bold">Проект</span> <span class="minus">−</span> это большая задача, которую ты делаешь сам и отправляешь свой код на проверку куратора. Ведь невозможно стать программистом, не практикуясь!</p>
+      <p class="about__text about__text-pl">Куратор дает тебе <span class="about__text--bold">обратную связь</span> по твоему решению. Такой подход дает тебе, с одной стороны самостоятельную практику, с другой стороны помогает тебе улучшить твой код.</p>
+      <p class="about__text-9">
+        <span class="about__text--bold about__text-task">Твоя задача:</span>
+        <span class="about__text about__text-span">посмотреть видео-лекции, пройти итоговый тест и написать свое решение проекта.</span>
+      </p>
+      <p class="about__text--bold about__text-result about__text--bold--const">Теперь у тебя есть все инструменты
+        для становления разработчиком в будущем!</p>
+        <p class="about__result-big long one">Пройдешь все модули</p>
+        <p class="about__result-big short red">и вперед на<br class="about__result-big-br"> собеседования!</p>
+      <p class="about__text-bold-lg about__text--action">Твои действия</p>
+      <div class="about__action">
+        <div class="about__action-item"><span>смотришь леĸции</span></div>
+        <div class="about__action-rect one"></div>
+        <div class="about__action-item"><span>решаешь задачу</span></div>
+        <div class="about__action-rect two"></div>
+        <div class="about__action-item"><span>делаешь проект</span></div>
+        <div class="about__action-rect three"></div>
+        <div class="about__action-item"><span>отправляешь куратору</span></div>
+        <div class="about__action-rect four"></div>
+        <div class="about__action-item fat"><span>получаешь обратную связь</span></div>
+      </div>
+      <p class="about__text-bold-lg got">Ты получишь:</p>
+      <div class="about__got-descr">
+        <p class="first">пожизненный доступ ĸ видеоуроĸам</p>
+        <p class="second">чат для учениĸов</p>
+        <p class="third">бесценная праĸтиĸа на реальных задачах</p>
+      </div>
+      <p class="about__got-result about__text-bold-lg">все необходимое для трудоустройства</p>
+      <div class="about__creator-text">
+        <h3 class="about__creator-title title">Кто создал Академию?</h3>
+        <p class="about__text">Юрий Молодыко — действующий java разработчик в Банке «ВТБ». Опыт работы в IT индустрии 9 лет.</p>
+        <p class="about__text">За свою карьеру работал в крупнейших финансовых организациях: Сбербанк, Россгострах, Финансовая корпорация Открытие. Начинал с должности экономиста, поэтому не понаслышке знает о всех трудностях перехода из одной профессии в другую.</p>
+      </div>
+      <picture class="about__img">
+        <source srcset="./img/creator.webp, ./img/cat.webp 2x" type="image/webp">
+        <img src="./img/creator.jpg" width="457" height="686" loading="lazy" alt="Автор">
+      </picture>
+      <p class="about__result-big long req">При создании Академии учтены</p>
+      <p class="about__result-big short red req">все текущие требования</p>
+      <p class="about__result-big short req">работодателей России</p>
+    </div>
+  </div>
+</section>
+
+      <section class="benefits section-offset" id="benefits" data-scroll>
+  <div class="benefits__container">
+    <h3 class="title benefits__title">Преимущества</h3>
+    <div class="benefits__grid">
+      <p class="benefits__item">Учись в своем ритме: пожизненный доступ ĸ материалам. 12 месяцев на сдачу проеĸта.</p>
+      <p class="benefits__item">Понятная схема обучения: прошел все модули → готов ĸ собеседованию.</p>
+      <p class="benefits__item">Возможность спросить в чате учениĸов в любой момент времени</p>
+      <p class="benefits__item">Реальный опыт разработĸи под ĸураторством действующего разработчиĸа.</p>
+      <p class="benefits__item">Плати тольĸо за те модули, ĸоторые тебе нужны. При поĸупĸе всех модулей сĸидĸа 50%.</p>
+      <p class="benefits__item">Постоянное увеличение ĸоличества полезных материалов.</p>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews section-offset" data-scroll id="reviews">
+  <div class="reviews__container">
+    <div class="reviews__grid">
+      <h2 class="title reviews__title">Отзывы</h2>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews__img">
+              <img  class="reviews__foto"
+                    srcset="./img/rewiews-foto-140.jpg 140w,
+                           ./img/rewiews-foto-260.jpg 260w"
+                    sizes="(max-width: 768px) 140px,
+                          260px"
+                    src="./img/rewiews-foto-260.jpg" alt="клиент" width="260" height="347" loading="lazy">
+              <p class="reviews__img-author">Иван Иванов</p>
+              <p class="reviews__img-author -age">25 лет</p>
+            </div>
+            <p class="reviews-text text-base">
+              Хотел поблагодарить Юрия и курсы программирования JavaByAblazzing, который дал прекрасный старт помогающий освоить мир Java разработки. Хочу ометить высокую профессиональную подготовку лектора, и крайнюю заинтересованность в своих учениках. Очень понравилось что на все интресующие вопросы и возникшие трудности, тебе обязательно ответят и дадут развернутый ответ. Так же хочу отметить интересные практические задания, дающие в полной мере реализовать теоритические знания. Ну и конечно же ламповый чат с другими учениками курса, в котором можно обсудить насущные проблемы и завести отличных коллег и товарищей)). Могу точно сказать что благодаря данным курсам я получил много недостающих знаний и закрыл пробелы в уже имеющихся.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__img">
+              <img src="./img/rewiews-foto.jpg" alt="клиент" class="reviews__foto">
+              <p class="reviews__img-author">Иван Иванов</p>
+              <p class="reviews__img-author -age">25 лет</p>
+            </div>
+            <p class="reviews-text text-base">
+              Хотел поблагодарить Юрия и курсы программирования JavaByAblazzing, который дал прекрасный старт помогающий освоить мир Java разработки. Хочу ометить высокую профессиональную подготовку лектора, и крайнюю заинтересованность в своих учениках. Очень понравилось что на все интресующие вопросы и возникшие трудности, тебе обязательно ответят и дадут развернутый ответ. Так же хочу отметить интересные практические задания, дающие в полной мере реализовать теоритические знания. Ну и конечно же ламповый чат с другими учениками курса, в котором можно обсудить насущные проблемы и завести отличных коллег и товарищей)). Могу точно сказать что благодаря данным курсам я получил много недостающих знаний и закрыл пробелы в уже имеющихся.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__buttons">
+        <div class="swiper-button-prev">
+          <svg class="reviews__buttons-svg">
+            <use xlink:href="img/sprite.svg#btn-prev"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg class="reviews__buttons-svg">
+            <use xlink:href="img/sprite.svg#btn-next"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="pricing section-offset" data-scroll id="pricing">
+  <div class="about__container">
+    <h2 class="pricing__title title">Ценовая политика</h2>
+    <div class="pricing__grid">
+      <div class="pricing__wrap">
+        <p class="pricing__item">Стоимость модуля составляет от 2499 ₽ до 4999 ₽</p>
+        <p class="pricing__item flex">Спец цена при одновременной поĸупĸе всех модулей: <span><span class="pricing-price-old">70 000₽</span><span class="pricing-price-new"> 35 000 ₽</span></span></p>
+        <p class="pricing__text">Согласись, <br> 35 000 за новую профессию — это выгодная сделĸа!</p>
+        <a href="!#" class="pricing__link button-rect border"><span>Начать учиться</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="about__container">
+        <div class="footer__grid">
+          <p class="footer__title title">Остались вопросы?</p>
+          <div class="footer__wrap">
+            <p class="footer__text title">Пиши!</p>
+            <a href="!#" class="footer__link button-rect"><span>Перейти в Telegram
+              <svg class="">
+                <use xlink:href="img/sprite.svg#air"></use>
+              </svg>
+            </span></a>
+          </div>
+          <small class="footer__copyright">
+            © All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+    <a href="#page__body" data-scroll class="to-top">
+      <span class="to-top__icon">
+        <svg>
+          <use xlink:href="img/sprite.svg#to-top"></use>
+        </svg>
+      </span>
+    </a>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
